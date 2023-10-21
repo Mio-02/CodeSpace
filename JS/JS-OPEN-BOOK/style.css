@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box; /*将容器声明成IE模型*/
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font: 100%/1.25 Helvetica, arial, sans-serif;
+    perspective: 1000px;
+    background-color: #999;
+    background-image: linear-gradient(to bottom, #39c5bb, #fff);
+}
+
+.p3d {
+    transform-style: preserve-3d;
+}
+
+.book {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* transform: translateY(-150px); */
+    margin-top: -150px;
+    color: #fff;
+    -webkit-transform: rotateX(60deg);
+    /* -o-transform: rotateX(60deg);
+    -moz-transform: rotateX(60deg); */
+    user-select: none;
+}
+
+.front-cover {
+    cursor: move; /*改变鼠标状态*/
+    transform-origin: 0 50%;
+    transform: rotateY(0deg);
+}
+
+.page {
+    width: 300px;
+    height: 300px;
+    padding: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: 2em;
+}
+
+.inside {
+    background-color: cadetblue;
+}
+
+.outside {
+    background: #fff;
+}
+
+.front-cover .outside {
+    background-image: url(./psc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateZ(3px);
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+
+
+.back-cover .outside {
+    transform: translateZ(-3px);
+}
+
+.back-cover .inside {
+    background-color: cadetblue;
+}
+
+.card,
+.shadow {
+    width: 196px;
+    height: 132px;
+    position: absolute;
+    left: 60px;
+    top: 60px;
+    transform-origin: 0 100%;
+}
+
+.shadow {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.card {
+    background: url(./0002111111222.png) no-repeat;
+    background-size: cover;
+}
