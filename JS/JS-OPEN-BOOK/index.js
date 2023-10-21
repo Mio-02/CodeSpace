@@ -22,8 +22,11 @@ window.onmousemove = function(e) {
     // console.log(deg);
     front.style.transform = `rotateY(${deg}deg)`
     //整本书立起来 60 + deg / 8
+    book.style.transform = `rotateX(${60 + deg / 8}deg)`
     //卡片 deg / 2
+    card.style.transform = `rotateX(${deg / 2}deg)`
     //阴影倾斜 deg / 8
+    shadow.style.transform = `skew(${deg / 8}deg)`
   }
 }
 
