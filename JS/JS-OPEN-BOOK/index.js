@@ -1,4 +1,7 @@
 var front = document.getElementsByClassName('front-cover')[0]
+var book = document.getElementsByClassName('book')[0]
+var card = document.getElementsByClassName('card')[0]
+var shadow = document.getElementsByClassName('shadow')[0]
 var hlod = false
 var clamp = function(val, min, max) {
   return Math.max(min, Math.min(val, max))
