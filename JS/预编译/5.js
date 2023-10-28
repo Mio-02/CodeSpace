@@ -1,0 +1,19 @@
+// GO: {
+//     global: undefined, 
+//     fn: function fn() {},
+// }
+
+global = 100
+function fn() {
+    console.log(global); // undefined
+    global = 200
+    console.log(global); // 200
+    var global = 300
+}
+
+// AO: {
+//     global: undefined, 200 300
+// }
+
+fn()
+var global;
