@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            list-style: none; /* 将列表的小圆点干掉 */
+            width: 200px;
+            height: 100px;
+            float: left;
+        }
+        li:nth-child(1) {
+            background: #c02525;
+        }
+        li:nth-child(2) {
+            background: #c0b325;
+        }
+        li:nth-child(3) {
+            background: #1fc533;
+        }
+        .text {
+            width: 100px;
+            height: 200px;
+            background: #324fde;
+            /* clear: both; */
+        }
+        /* ul {
+            height: 100px;
+        } */
+        /* .clear {
+            clear: left; 清除左浮动的效果
+        } */
+        /* .clear::after {
+            content: '';
+            clear: both;
+            display: block;
+            强行将伪元素声明成块级元素
+        } */
+        ul {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container"> -->
+    <div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <div class="clear"></div>
+            <!-- 把浮动的效果在此处拦截 -->
+        </ul>
+
+        <div class="text">Hello World</div>
+    </div>
+</body>
+</html>
