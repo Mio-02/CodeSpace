@@ -142,7 +142,7 @@
 
 .body-play .mode .iconfont {
     font-size: 14px;
-    color: #8d8e99;
+    color: #7f808a;
 }
 
 .body-play .previous .iconfont {
@@ -163,7 +163,7 @@
 
 .body-play .like .iconfont {
     font-size: 14px;
-    color: #8d8e99;
+    color: #7f808a;
 }
 
 .body-model {
@@ -174,4 +174,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.body-model .shezhi {
+    font-size: 14px;
+    color: #7f808a;
+}
+
+.body-model .liebiao {
+    font-size: 14px;
+    color: #7f808a;
 }
