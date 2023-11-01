@@ -129,3 +129,36 @@
     font-family: SourceHanSansCN;
     color: #9EA0AD;
 }
+
+.body-play {
+    width: 230px;
+    height: 49px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+.body-play .mode {
+    display: flex;
+    float: left;
+}
+
+.body-play .previous {
+    display: flex;
+    float: left;
+}
+
+.body-play .suspend {
+    display: flex;
+    float: left;
+    text-size-adjust: 49px;
+}
+
+.body-play .next {
+    display: flex;
+    float: left;
+}
+
+.body-play .like {
+    display: flex;
+    float: left;
+}
