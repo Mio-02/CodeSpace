@@ -176,12 +176,12 @@
     align-items: center;
 }
 
-.body-model .shezhi {
-    font-size: 14px;
+.body-model .shezhi .iconfont {
+    font-size: 25px;
     color: #7f808a;
 }
 
-.body-model .liebiao {
-    font-size: 14px;
+.body-model .liebiao .iconfont {
+    font-size: 25px;
     color: #7f808a;
 }
