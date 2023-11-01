@@ -12,7 +12,7 @@
 .music__hd .bg {
     width: 100%;
     height: 303px;
-    background: url(./1.jpg);
+    background: url(./2.png);
     background-size: 100% 100%;
 
     filter: blur(10px);
@@ -47,6 +47,7 @@
     background-color: #fff;
     border-top-right-radius: 32px;
     border-top-left-radius: 32px;
+    text-align: center;
 }
 
 .body-pic {
@@ -79,4 +80,52 @@
 .body-desc{
     margin-top: 280px;
     text-align: center;
+}
+
+.body-desc .name {
+    font-family: SourceHanSansCN;
+    font-size: large;
+}
+
+.body-desc .author {
+    font-family: SourceHanSansCN;
+    font-size: x-small;
+    margin-top: 5px;
+    color: #4F4F4F;
+}
+
+.body-line {
+    margin-top: 42px;
+}
+
+.body-line .down {
+    background-color: #C6C6C6;
+    width: 232px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.body-line .up {
+    background-color: #F03030;
+    width: 113px;
+    margin: -3px 186px 0px 70px;
+    border-radius: 30px;
+}
+
+.body-line .time-left {
+    float: left;
+    margin-left: 70px;
+    margin-top: 2px;
+    font-size: 8px;
+    font-family: SourceHanSansCN;
+    color: #9EA0AD;
+}
+
+.body-line .time-right {
+    float: right;
+    margin-right: 70px;
+    margin-top: 2px;
+    font-size: 8px;
+    font-family: SourceHanSansCN;
+    color: #9EA0AD;
 }
