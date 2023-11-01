@@ -135,30 +135,43 @@
     height: 49px;
     margin: 0 auto;
     margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.body-play .mode {
-    display: flex;
-    float: left;
+.body-play .mode .iconfont {
+    font-size: 14px;
+    color: #8d8e99;
 }
 
-.body-play .previous {
-    display: flex;
-    float: left;
+.body-play .previous .iconfont {
+    font-size: 30px;
+    color: #7f808a;
 }
 
-.body-play .suspend {
-    display: flex;
-    float: left;
-    text-size-adjust: 49px;
+.body-play .suspend .iconfont {
+    font-size: 49px;
+    color: #d83636;
+    text-shadow: 0px 6px 19px 0px #d83636;
 }
 
-.body-play .next {
-    display: flex;
-    float: left;
+.body-play .next .iconfont {
+    font-size: 30px;
+    color: #7f808a;
 }
 
-.body-play .like {
+.body-play .like .iconfont {
+    font-size: 14px;
+    color: #8d8e99;
+}
+
+.body-model {
+    width: 230px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 27px;
     display: flex;
-    float: left;
+    justify-content: space-between;
+    align-items: center;
 }
