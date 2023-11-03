@@ -1,0 +1,14 @@
+<script>
+    Person.prototype.name = '阿美'
+    function Person() {
+        //__proto__: Person.prototype // new的第一步，将显示原型赋给隐式原型，使其不显示但可访问
+        //this:... // new的第二步，添加该添加的属性和方法
+        //return Person // new的第三步，返回
+    }
+    var p = new Person();
+    console.log(p);
+    // __proto__ && [[Prototype]] 指对象的原型
+    // 之前说的.prototype 指函数的原型
+    // 而之所以没有直接显示函数原型的属性但是能访问到，
+    // 是因为函数原型的属性放在了对象原型的属性中
+</script>
