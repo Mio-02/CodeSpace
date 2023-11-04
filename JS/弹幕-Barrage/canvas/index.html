@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <script>
+        let canvas = document.getElementById("canvas")
+
+        let ctx = canvas.getContext("2d")
+
+        // ctx.fillStyle = "green" // 要先把绿色的画笔准备好
+        // ctx.fillRect(10, 10, 55, 50) // fillRect通过两个点的坐标定义了一个矩形(fill是填充)
+        // // ctx.fillStyle = "green" // 颜色定义在后面没用
+
+        // ctx.fillRect(10, 10, 100, 50)
+        // ctx.strokeRect(10, 70, 100, 50) // strokeRect也通过两个点的坐标定义了一个矩形(但没有填充色)
+
+        // ctx.beginPath() // 把画笔戳在画布上
+        // ctx.moveTo(50, 50) // 画笔戳在画布上的起始位置
+        // ctx.lineTo(200, 50) // 绘画的下一个坐标
+        // ctx.lineTo(200, 200) // 同理
+        // ctx.closePath() // 路线闭合（画出图形）
+        // ctx.stroke() // 把上面的路线描绘出来
+        // ctx.fill() // 填充颜色（默认黑色）
+
+        // ctx.beginPath()
+        // ctx.arc(50, 50, 40, 0, Math.PI / 2) // 曲线，前四个数字是始末两个点的坐标，最后一个参数是弧度
+        // ctx.stroke() // 绘制
+
+        // 画布在最后一步绘制前要告诉画布你需要绘制的东西
+        // 最后一步才是绘制
+        ctx.font = '30px sans-serif' // 定义文字大小和字体
+        ctx.fillText('今天你写文章了吗', 10, 100) // 定义内容和起始位置
+        // ctx.strokeText('我要写三篇', 10, 100) // strokeText--描边，画布上的东西可以重叠（可以重复落笔）
+        ctx.strokeText('我要写三篇', 10, 200)
+        ctx.stroke() // 绘制
+
+    </script>
+</body>
+</html>
