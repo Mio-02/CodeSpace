@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>异步执行</title>
+</head>
+<body>
+    <script>
+        function a() {
+            setTimeout(function() {
+                console.log('肖总的菜做完了');
+            }, 1000)
+        }
+        a()
+
+        function b() {
+            console.log('肖总在刷抖音');
+        }
+        b()
+        // 两个函数同时进行而不是依次进行，为了让执行效率更高
+    </script>
+</body>
+</html>
