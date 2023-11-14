@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <!-- <li>html</li>
+        <li>css</li>
+        <li>js</li> -->
+    </ul>
+
+    <!-- 以前这么写 -->
+    <!-- <script>
+        let arr = ['html', 'css', 'js', 'node'];
+        for (let i = 0; i < arr.length; i++) {
+            let li = document.createElement('li');
+            li.innerHTML = arr[i];
+            document.getElementById('ul').appendChild(li)
+        }
+    </script> -->
+
+    <!-- 现在这么写（打造框架） -->
+    <script>
+        // 模板语法：
+        let templete = `
+        <ul>
+            <% for(let i = 0; i < arr.length; i++) { %>
+                <li> <%= arr[i] %> </li>
+            <% } %>    
+        </ul>
+        `
+
+        function compile(tel) {
+            let evalExpr = /<%(.+?)%>/g
+            tel = tel.replace(evalExpr, '**')
+            return tel
+        }
+
+        console.log(compile(templete));
+    </script>
+</body>
+</html>

@@ -42,34 +42,34 @@ transformers --- huggingface的核心库
     for k, v in SUPPORTED_TASKS.items(): # 相当于块级作用域
     print(k) # 查看默认支持的nlp任务
     # 返回：
-    audio-classification音频分类
-    automatic-speech-recognition自动语音识别
-    text-to-audio文本到音频
-    feature-extraction特征提取
-    text-classification文本分类
-    token-classification令牌分类
-    question-answering问答
-    table-question-answering表格问答
-    visual-question-answering视觉问答
-    document-question-answering文件问答
-    fill-mask填充掩模
-    summarization摘要
-    translation翻译
-    text2text-generation text2文本生成
-    text-generation文本生成
-    zero-shot-classification零热分类
-    zero-shot-image-classification零热图像分类
-    zero-shot-audio-classification零热音频分类
-    conversational会话
-    image-classification图像分类
-    image-segmentation图像分割
-    image-to-text图像到文本
-    object-detection物体检测
-    zero-shot-object-detection零热物体探测
-    depth-estimation深度估计
-    video-classification视频分类
-    mask-generation掩模生成
-    image-to-image图像对图像
+    audio-classification
+    automatic-speech-recognition
+    text-to-audio
+    feature-extraction
+    text-classification
+    token-classification
+    question-answering
+    table-question-answering
+    visual-question-answering
+    document-question-answering
+    fill-mask
+    summarization
+    translation
+    text2text-generation text2
+    text-generation
+    zero-shot-classification
+    zero-shot-image-classification
+    zero-shot-audio-classification
+    conversational
+    image-classification
+    image-segmentation
+    image-to-text
+    object-detection
+    zero-shot-object-detection
+    depth-estimation
+    video-classification
+    mask-generation
+    image-to-image
 
  -  checkpoint = "google/owlvit-base-patch32" # 图片识别模型
     detector = pipeline('zero-shot-object-detection',model=checkpoint) # (选择任务，传入模型)

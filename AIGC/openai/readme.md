@@ -80,7 +80,7 @@
 
  -  # 分词 transformers第二个核心模块
     from transformers import AutoTokenizer # 不同的模型
-    sens="管海军有大梦想，来旅梦，去拼多多" # 这是人类语言，需要向LLM转化
+    sens="我有大梦想，AI改变世界" # 这是人类语言，需要向LLM转化
     tokenizer = AutoTokenizer.from_pretrained('uer/roberta-base-finetuned-dianping-chinese') # 引入一个分词器
     tokenizer
 
