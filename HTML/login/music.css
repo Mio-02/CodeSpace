@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.music_head {
+    display: flex;
+    position: relative;
+    height: 50px;
+    overflow: auto;
+}
+
+.music_head .back .iconfont {
+    height: 100%;
+    font: 900 20px '';
+    margin: 15px;
+    margin-right: 100px;
+    float: left;
+}
+
+.music_head .title {
+    margin-top: 15px;
+}
+
+.music_head .title .iconfont {
+    font-size: 20px;
+    color: red;
+}
+
+.music_head .title_text {
+    margin-top: 15px;
+    margin-left: 3px;
+    font-size: 15px;
+}
+
+
+.music_body input{
+    margin-left: 17%;
+    background-color: rgb(244, 242, 242);
+    width: 60%;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font: 900 14px '';
+}
+
+.music_body {
+    display: grid;
+    place-items: center;
+    margin-top: 25%;
+}
+
+.music_body button.login{
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    width: 65%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(246, 188, 188);
+    font: 900 15px '';
+}
+
+.reset {
+    margin-top: 20px;
+    font: 900 12px '';
+    color: rgb(36, 103, 198);
+}

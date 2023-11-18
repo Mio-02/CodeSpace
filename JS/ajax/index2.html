@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">新歌速递</button>
+    <ul id="ul">
+        
+    </ul>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () => {
+           $.ajax({
+            url: 'http://192.168.31.45:3000/top/song?type=7',
+            method: 'GET',
+            dataType: 'json',
+            // 为了确保先拿到数据再执行后续操作，防止其他地方的代码异步执行，所以这里我们要回调
+            success: function(res) {
+                console.log(res);
+            }
+           })
+        })
+    </script>
+</body>
+</html>

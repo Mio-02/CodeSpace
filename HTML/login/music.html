@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易云登录</title>
+    <link rel="stylesheet" href="./music.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4336212_egoca6b2a2.css">
+</head>
+<body>
+    <div class="music">
+        <div class="music_head">
+            <div class="back">
+                <i class="iconfont icon-fanhui"></i>
+            </div>
+            <div class="title">
+                <i class="iconfont icon-a-Property1wangyiyunyinle"></i>
+            </div>
+            <div class="title_text">网易云音乐</div>
+        </div>
+        <div class="music_body">
+            <div class="login">
+                <input type="text" placeholder="  登录邮箱" id="username">
+                <input type="text" placeholder="  密码" id="password">
+            </div>
+            <button class="login" type="submit" id="btn">登录</button>
+            <div class="reset">
+                重设密码
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        const email = document.getElementById('username');
+        const password = document.getElementById('password');
+        const btn = document.getElementById('btn');
+        btn.addEventListener('click', () =>{
+            // Jquery方法
+            $.ajax({
+                url: 'http://192.168.31.45:3000/login',
+                data: {
+                    username: email.value,
+                    password: password.value
+                },
+                method: 'GET',
+                dataType: 'json',
+                success: function (res) {
+                    window.alert('登陆成功');
+                }
+            })
+        })
+    </script>
+</body>
+</html>

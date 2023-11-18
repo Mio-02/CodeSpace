@@ -1,14 +1,15 @@
 function a() {
     setTimeout(() => {
-        console.log('阿珍');
+        console.log('写文章');
         b()
     }, 1000)
 }
 
 function b() {
     setTimeout(() => {
-        console.log('十亩地');
+        console.log('发布');
     }, 0)
 }
 
 a()
+// b()
