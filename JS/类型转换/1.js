@@ -5,4 +5,6 @@
 // let n = null
 
 // let big = 123n
-// let sy = 
+// let sy = Symbol(123)
+
+console.log(Boolean(true));
