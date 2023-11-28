@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+
+    <template id="my-app">
+        <!-- <h2 v-text="msg"></h2> -->
+        <img v-bind:src="imgUrl" alt=""><br>
+        <a v-bind:href="link">哔哩哔哩</a><br>
+        <!-- 简写 -->
+        <a :href="link">哔哩哔哩</a>
+    </template>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script>
+        const App = {
+            template: '#my-app',
+            data() {
+                return {
+                    // msg: '你好'
+                    imgUrl: './wallhaven-85j9qo_4000x2856.png',
+                    link: 'https://www.bilibili.com'
+                }
+            }
+        }
+        Vue.createApp(App).mount('#app')
+    </script>
+</body>
+</html>
