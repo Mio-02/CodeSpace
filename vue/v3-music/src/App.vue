@@ -15,6 +15,9 @@
       <div class="h-14">
         <Header/>
       </div>
+      <div>
+        <ElButton>按钮</ElButton>
+      </div>
     </div>
   </div>
 </template>
