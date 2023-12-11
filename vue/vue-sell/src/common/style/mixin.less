@@ -1,0 +1,8 @@
+.bg-image(@url) {
+  background-image: ~"url(picture/@{url}@2x.png)"; // 波浪线可以自动捕捉绝对路径，在引用的时候可以省略路径直接写函数名
+  // 媒体查询（查询用户的媒体设备）
+  // 如果媒体查询命中（查询到用户设备显示的是三倍屏），就会覆盖上面的函数
+  @media(-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  background-image: ~"url(picture/@{url}@3x.png)";
+  }
+}
