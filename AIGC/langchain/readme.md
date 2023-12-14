@@ -38,3 +38,6 @@ chat = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
 response = chat([HumanMessage(content="Hello LangChain!")])
 print(response)
 -----
+# 就能正常对话使用了，例：
+response = chat([HumanMessage(content="我怎么给开源项目贡献代码")])
+print(response)
