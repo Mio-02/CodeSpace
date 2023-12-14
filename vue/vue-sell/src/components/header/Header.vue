@@ -11,13 +11,14 @@
         </div>
         <div class="description">蜂鸟专送/38分钟送达</div>
         <div class="support">
-          <!--  -->
+          <!-- <SupportIcon /> 也可以像下面一行一样这么写，驼峰式书写可以写为小写用横杠连接 -->
+          <support-icon :size="1" :type="0"/> <!-- 父组件给子组件传值 -->
           <span class="text">在线支付满28减5</span>
         </div>
       </div>
       <div class="support-count">
         <span class="count">5个</span>
-        <i class="iconfont">></i>
+        <i class="iconfont icon-youjiantou1"></i>
       </div>
     </div>
     <div class="bulletin-wrapper">
@@ -27,8 +28,11 @@
 </template>
 
 <script>
+import SupportIcon from '@/components/support-icon/Support-icon.vue'
 export default {
-
+  components: {
+    SupportIcon
+  }
 }
 </script>
 
@@ -117,4 +121,4 @@ export default {
       }
     }
   }
-}</style> 
+}</style>
