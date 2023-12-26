@@ -16,4 +16,4 @@ const fs = require('fs')
 fs.watch('./', { recursive: true }, (eventType, filename) => {
   console.log(`当前文件夹下${filename}文件变更为：${eventType}`);
 })
-// 监听运行起来后不会终止，得新开终端运行其他文件，监听的终端会一直保持监听
+// 监听运行起来后不会终止，得新开终端运行其他文件，监听的终端会一直保持监听 
