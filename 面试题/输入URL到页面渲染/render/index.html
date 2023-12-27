@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">hello</div>
+
+  <script>
+    let app = document.getElementById('app')
+
+    app.style.position = 'relative'
+
+    // app.style.width = '100px'
+    // app.style.height = '200px'
+    // app.style.left = '10px'
+    // app.style.top = '10px' 
+    // 在老版本的浏览器，这样写页面会回流四次
+    // 但现在的浏览器做了优化策略：现在的浏览器会维护一个渲染队列。这四行代码页面只会回流一次
+
+    // app.style.cssText = 'width: 100px; height: 200px; left: 10px; top: 10px'
+    // 这样写成一行页面就只会回流一次
+
+    // app.style.width = '100px'
+    // console.log(app.offsetWidth);
+    // app.style.height = '200px'
+    // console.log(app.offsetHeight);
+    // app.style.left = '10px'
+    // console.log(app.offsetLeft);
+    // app.style.top = '10px' 
+    // console.log(app.offsetTop);
+    // 当代码这么写就无论如何都是回流四次，因为每次都必须执行完才能拿到数据
+
+    app.style.width = '100px'
+    app.style.height = '200px'
+    app.style.left = '10px'
+    app.style.top = '10px'
+    console.log(app.offsetWidth);
+    console.log(app.offsetHeight);
+    console.log(app.offsetLeft);
+    console.log(app.offsetTop);
+    // 将上面的代码这么写就是回流一次了
+
+  </script>
+</body>
+</html>
