@@ -79,7 +79,7 @@ const todos = ref([
   {   id: 3,
       text: '圆梦之星',
       done: false
-  }
+  } 
 
 ]); // 容器 所有任务 store
 const allChecked = computed(() => todos.value.every(todo => todo.done)); // computed  todos every 
