@@ -66,7 +66,7 @@ const filters = {
   completed: todos => todos.filter(todo => todo.done)
 }
 
-const visibility = ref('all');  // change  
+const visibility = ref('all');  // change   
 const todos = ref([
   {   id: 1,
       text: '吃饭',
