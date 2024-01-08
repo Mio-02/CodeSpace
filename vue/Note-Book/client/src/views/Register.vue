@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-    <h1>登录</h1>
+    <h1>注册</h1>
     <div class="login-wrapper">
       <div class="avatar">
         <img src="../assets/img/1.jpg" alt="">
@@ -8,6 +8,13 @@
 
       <van-form @submit="onSubmit">
         <van-cell-group inset>
+          <van-field
+            v-model="state.nickname"
+            name="昵称"
+            label="昵称"
+            placeholder="昵称"
+            :rules="[{ required: true, message: '请填写昵称' }]"
+          />
           <van-field
             v-model="state.username"
             name="用户名"
@@ -25,14 +32,14 @@
           />
         </van-cell-group>
         <div style="margin: 16px;">
-          <van-button round block type="primary" native-type="submit">
-            登录
+          <van-button round block color="#39c5bb" native-type="submit">
+            注册
           </van-button>
         </div>
       </van-form>
 
     </div>
-    <p class="register" @click="register">新用户？点击这里注册</p>
+    <p class="register" @click="login">已有账号？点击登录</p>
   </div>
 </template>
 
@@ -41,25 +48,22 @@
 import { reactive } from 'vue';
 const state = reactive({ 
   username: '',
-  password: ''
+  password: '',
+  nickname: ''
 });
-// 将一个对象变成响应式用ref，ref性能比reactive高
-// import { ref } from 'vue';
-// const username = ref('');
-// const password = ref('');
 
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
 const onSubmit = () => {
-  console.log(state.username, state.password);
-  // 接下来应该发请求，将state.username和state.password传给后端
+  console.log(state.nickname, state.username, state.password);
+  // 接下来应该发请求，将state.nickname, state.username和state.password传给后端
 
 }
 
-const register = () => {
-  router.push('/register');
+const login = () => {
+  router.push('/login');
 }
 
 </script>
