@@ -61,7 +61,7 @@ const onSubmit = () => {
   // 接下来应该发请求，将state.nickname, state.username和state.password传给后端
 
 }
-
+ 
 const login = () => {
   router.push('/login');
 }
