@@ -28,7 +28,7 @@
 
 
 -----
-# 轻量的关系型数据库，大佬一般在测试产品想法的时候用它
+# sqlite --- 一个轻量的关系型数据库，大佬一般在测试产品想法的时候用它
 # 本地数据库 python自带
 import sqlite3
 # 数据库连接句柄
@@ -72,7 +72,7 @@ conn.close()
 !pip install openai==0.28.1
 # 安装AI应用开发框架
 !pip install langchain
-# 包里含有很多最新实验的东西
+# 安装了langchain-experimental包，该包包含了一些最新的实验性功能和工具
 !pip install langchain-experimental
 -----
 
@@ -87,8 +87,7 @@ from langchain_experimental.sql import SQLDatabaseChain
 db = SQLDatabase.from_uri("sqlite:///FlowerShop.db")
 # 返回OpenAI实例
 llm = OpenAI(temperature=0, verbose=True, api_key='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')
-# chain 起来
-# langchain 提供了各种chain
+# 将数据库对象和OpenAI实例通过SQLDatabaseChain进行链式连接
 db_chain = SQLDatabaseChain.from_llm(llm, db, verbose=True)
 response = db_chain.run("有多少种不同的鲜花？")
 print(response)
