@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/podcast/podcast",
+    "pages/mine/mine",
+    "pages/follow/follow",
+    "pages/community/community"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "发现",
+        "iconPath": "/static/icon/wangyiyun.png",
+        "selectedIconPath": "/static/icon-active/wangyiyun-active.png"
+      },
+      {
+        "pagePath": "pages/podcast/podcast",
+        "text": "播客",
+        "iconPath": "/static/icon/boke.png",
+        "selectedIconPath": "/static/icon-active/boke-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/static/icon/yinyue.png",
+        "selectedIconPath": "/static/icon-active/yinyue-active.png"
+      },
+      {
+        "pagePath": "pages/follow/follow",
+        "text": "关注",
+        "iconPath": "/static/icon/wodeguanzhu.png",
+        "selectedIconPath": "/static/icon-active/wodeguanzhu-active.png"
+      },
+      {
+        "pagePath": "pages/community/community",
+        "text": "社区",
+        "iconPath": "/static/icon/shequ.png",
+        "selectedIconPath": "/static/icon-active/shequ-active.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}
