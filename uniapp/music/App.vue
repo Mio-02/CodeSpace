@@ -14,4 +14,5 @@
 
 <style>
 	/*每个页面公共css */
+	@import url("//at.alicdn.com/t/c/font_4417061_s29bf3awujo.css");
 </style>

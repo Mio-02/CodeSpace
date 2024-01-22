@@ -33,27 +33,37 @@
 			</view>
 		</view>
 		
-		<!-- 专属推荐 -->
-		<songList :list="state.recommendList"></songList>
+		<!-- 推荐歌单 -->
+		<songList :list="state.recommendList" title="推荐歌单" />
+		
+		<!-- 推荐歌曲 -->
+		<recommendSong :list="state.recommendSongs" />
+		
+		<!-- 雷达歌单 -->
+		<songList :list="state.personalizedList" title="Mio的雷达歌单" />
 		
 	</view>
 </template>
 
 <script setup>
-	import { apiGetBall, apiGetBanner, apiGetRecommendList } from '@/api/index.js'
+	import { apiGetBall, apiGetBanner, apiGetRecommendList, apiGetRecommendSongs, apiGetPersonalizedList } from '@/api/index.js'
 	import { onLoad } from '@dcloudio/uni-app'
 	import { reactive } from 'vue';
 	
 	const state = reactive({
 		banners: [],
 		balls: [],
-		recommendList: []
+		recommendList: [],
+		recommendSongs: [],
+		PersonalizedList: []
 	})
 	
 	onLoad(() => {
 		getBanner()
 		getBall()
 		getRecommendList()
+		getRecommendSongs()
+		getPersonalizedList()
 	})
 	
 	// 获取benner图
@@ -83,6 +93,20 @@
 		const { data: { recommend: recommend } } = await apiGetRecommendList()
 		console.log(recommend);
 		state.recommendList = recommend
+	}
+	
+	// 获取推荐歌曲
+	const getRecommendSongs = async() => {
+		const res = await apiGetRecommendSongs()
+		console.log(res.data.data.dailySongs);
+		state.recommendSongs = res.data.data.dailySongs
+	}
+	
+	// 获取雷达歌单
+	const getPersonalizedList = async() => {
+		const res = await apiGetPersonalizedList()
+		console.log(res.data.result);
+		state.personalizedList = res.data.result
 	}
 	
 </script>

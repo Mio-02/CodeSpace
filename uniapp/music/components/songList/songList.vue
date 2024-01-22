@@ -2,7 +2,7 @@
 	<view class="recommend">
 		<view class="recommend-hd">
 			<view class="title">
-				推荐歌单
+				{{title}}
 				<uni-icons type="right" size="15"></uni-icons>
 			</view>
 			<view class="more">
@@ -22,7 +22,8 @@
 
 <script setup>
 	defineProps({
-		list: Array
+		list: Array,
+		title: String
 	})
 </script>
 
@@ -32,6 +33,7 @@
 		display: flex;
 		justify-content: space-between;
 		font-size: 32rpx;
+		font-weight: bold;
 	}
 	.recommend-bd {
 		display: flex;
