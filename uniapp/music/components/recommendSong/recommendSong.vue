@@ -86,10 +86,10 @@ onUpdated(() => {
 					flex-direction: column;
 					justify-content: center;
 					.name{
-						height: 24px;
 						width: 450rpx;
-						text-overflow: ellipsis;
 						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
 					}
 					.author{
 						font-size: 24rpx;

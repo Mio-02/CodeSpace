@@ -1,7 +1,10 @@
 <script>
 	export default {
 		onLaunch: function() {
-			console.log('App Launch')
+			// console.log('App Launch')
+			// 判断用户是否登录:
+			// 先读取本地看是否有历史登录所存的信息
+			let key = 
 		},
 		onShow: function() {
 			console.log('App Show')
