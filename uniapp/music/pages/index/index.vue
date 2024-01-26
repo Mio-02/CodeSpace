@@ -4,7 +4,7 @@
 			<!-- 将内容填充到名为content的插槽中 -->
 			<template v-slot:content>
 				<view class="search">
-					<uni-search-bar @confirm="search" @input="input" placeholder="搜索歌曲 \ 歌手 \ MV"></uni-search-bar>
+					<uni-search-bar placeholder="搜索歌曲 \ 歌手 \ MV"></uni-search-bar>
 				</view>
 			</template>
 		</wyheader>
@@ -69,7 +69,7 @@
 	// 获取benner图
 	const getBanner = () => {
 		apiGetBanner({type: 2}).then(res => {
-			console.log(res.data.banners);
+			// console.log(res.data.banners);
 			state.banners = res.data.banners
 		})
 	}
@@ -83,7 +83,7 @@
 	// 或者这种写法：
 	const getBall = async() => {
 		const { data: { data: balls } } = await apiGetBall()
-		console.log(balls);
+		// console.log(balls);
 		// 把数据源存起来
 		state.balls = balls
 	}
@@ -91,21 +91,21 @@
 	// 获取推荐歌单
 	const getRecommendList = async() => {
 		const { data: { recommend: recommend } } = await apiGetRecommendList()
-		console.log(recommend);
+		// console.log(recommend);
 		state.recommendList = recommend
 	}
 	
 	// 获取推荐歌曲
 	const getRecommendSongs = async() => {
 		const res = await apiGetRecommendSongs()
-		console.log(res.data.data.dailySongs);
+		// console.log(res.data.data.dailySongs);
 		state.recommendSongs = res.data.data.dailySongs
 	}
 	
 	// 获取雷达歌单
 	const getPersonalizedList = async() => {
 		const res = await apiGetPersonalizedList()
-		console.log(res.data.result);
+		// console.log(res.data.result);
 		state.personalizedList = res.data.result
 	}
 	

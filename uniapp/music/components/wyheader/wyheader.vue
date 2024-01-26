@@ -1,5 +1,5 @@
 <template>
-	<view class="header">
+	<view class="header" :style="{backgroundColor: bgColor}">
 		<uni-icons type="bars" size="22" @click="showMenu"></uni-icons>
 		
 		<view class="content">
@@ -9,7 +9,7 @@
 		
 		<uni-icons :type="icon" size="22"></uni-icons>
 	</view>
-	<view class="box"></view>
+	<view class="box" v-if="needBox"></view>
 </template>
 
 <script setup>
@@ -17,9 +17,18 @@
 	const store = useStore()
 	
 	defineProps({
+		// 子组件中接收的值
 		icon: {
 			type: String,
 			default: 'mic'
+		},
+		bgColor: {
+			type: String,
+			default: '#fff'
+		},
+		needBox: {
+			type: Boolean,
+			default: true
 		}
 	})
 	
