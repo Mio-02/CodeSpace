@@ -13,5 +13,10 @@
 - 发展史
 1. 回调函数：但要是回调函数嵌套过多的话，代码就会维护困难（回调地狱）
 2. Promise：
-    - 维护了一个状态，state，值为三种：pending、fulfilled/resolved、rejected，目的是让promise的状态一经改变，无法再次修改，也就保证了then和catch不可能同时触发。
+    - 维护了一个状态，state，值为三种：pending、fulfilled、rejected，目的是让promise的状态一经改变，无法再次修改，也就保证了then和catch不可能同时触发。
     - 内部的resolve函数会修改state为fulfilled，并触发then中的回调
+3. then:
+    - 默认返回一个promise对象，状态为fulfilled
+    - 当then前面的promise状态为fulfilled时，then中的回调直接执行
+      当then前面的promise状态为rejected时，then中的第二个回调直接执行
+      当then前面的promise状态为pending时，then中的回调需要被缓存起来交给resolve或者reject执行
