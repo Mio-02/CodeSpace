@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "欢迎点餐",
+  "usingComponents": {
+    "header": "../../components/Header/Header"
+  }
+}

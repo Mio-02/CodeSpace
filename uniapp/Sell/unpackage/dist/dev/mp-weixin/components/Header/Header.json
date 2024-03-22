@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "support-icon": "../Support-icon/Support-icon",
+    "header-detail": "../Header-detail/Header-detail"
+  }
+}

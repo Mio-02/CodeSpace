@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "support-icon": "../Support-icon/Support-icon"
+  }
+}

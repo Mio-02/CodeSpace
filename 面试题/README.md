@@ -1,0 +1,15 @@
+- git
+- 八股
+- 怎么调试自己的代码
+- 状态码
+- 生命周期
+- node stream
+- vuex/pinia
+- 持久化
+- JWT
+- 深度优先搜索 DFS BFS
+- 手写ts
+- react
+
+- 动态规划
+- 代码随想录

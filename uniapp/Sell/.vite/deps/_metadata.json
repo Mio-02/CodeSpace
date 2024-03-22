@@ -1,0 +1,13 @@
+{
+  "hash": "ae4044bd",
+  "browserHash": "62c7de82",
+  "optimized": {
+    "@better-scroll/core": {
+      "src": "../../node_modules/@better-scroll/core/dist/core.esm.js",
+      "file": "@better-scroll_core.js",
+      "fileHash": "c46b7f6f",
+      "needsInterop": false
+    }
+  },
+  "chunks": {}
+}

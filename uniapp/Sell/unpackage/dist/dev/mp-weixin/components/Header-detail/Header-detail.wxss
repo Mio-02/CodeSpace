@@ -1,0 +1,157 @@
+.header-detail {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(7, 17, 27, 0.8);
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.header-detail.fade-enter-from,
+.header-detail.fade-leave-to {
+  opacity: 0;
+  background: #07111b;
+}
+.header-detail.fade-enter-active,
+.header-detail.fade-leave-active {
+  transition: all 0.5s ease;
+}
+.header-detail .detail-wrapper .detail-main .name {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+}
+.header-detail .detail-wrapper .detail-main .star {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 140px;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: orange;
+}
+.header-detail .detail-wrapper .discount .name {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 175px;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+}
+.header-detail .detail-wrapper .discount .first-floor .floor {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 210px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .first-floor .discount1 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 230px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .first-floor .discount2 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 250px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .first-floor .discount3 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 270px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .first-floor .discount4 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 290px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .second-floor .floor {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 315px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .second-floor .discount1 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 335px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .discount .second-floor .discount2 {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 355px;
+  padding: 0 100px;
+  text-align: left;
+  font-size: 12px;
+}
+.header-detail .detail-wrapper .notice .name {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  top: 375px;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+}
+.header-detail .detail-wrapper .notice .detail {
+  width: 50%;
+  height: 10px;
+  position: fixed;
+  top: 410px;
+  text-align: left;
+  font-size: 12px;
+  padding: 0 100px;
+  line-height: 15px;
+}
+.header-detail .detail-close {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -15px;
+  text-align: center;
+  line-height: 30px;
+}
